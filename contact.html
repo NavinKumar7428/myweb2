@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
 <head>
-  <title>Delish Dinner | Home</title>
+  <title>Delish Dinner | Contact</title>
 </head>
+
 
 <style>
 * {
@@ -47,7 +47,7 @@ nav a {
 
 nav a:link
 {
-color:black;
+color:white;
 text-decoration:none;
 padding:10px;
 transition:0.50s;
@@ -66,17 +66,17 @@ nav a:hover
   
 }
 
-.me {
-  //background-image:url(images2/p2.jpg);
+.hero {
+ 
   height: 400px;
-  color: #b22222;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.me h2 {
+.hero h2 {
   font-size: 48px;
   margin-bottom: 10px;
 }
@@ -85,7 +85,6 @@ section {
   padding: 60px 20px;
   text-align: center;
 }
-
 
 
 form {
@@ -122,10 +121,7 @@ footer {
   text-align: center;
   margin-top: 40px;
 }
-
 </style>
-
-
 <body>
   <header>
     <h1>Delish Dinner</h1>
@@ -139,18 +135,18 @@ footer {
     </nav>
   </header>
 
-  <div class="me">
-    <h2>Welcome to Delish Dinner</h2>
-    <p>Home of delicious and fresh meals</p>
-  </div>
-
   <section>
-    <h2>Why Choose Us?</h2>
-    <p>We serve high-quality, freshly prepared meals with ingredients sourced locally.</p>
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Delish Dinner. All Rights Reserved.</p>
+    <p>&copy; 2025 Delish Diner. All Rights Reserved.</p>
   </footer>
 </body>
 </html>

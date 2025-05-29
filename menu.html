@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Delish Dinner | Home</title>
+
+  <title>Delish Dinner | Menu</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <style>
@@ -19,7 +21,6 @@ body {
 }
 
 header {
-  //background-color: #b22222;
   background-image:url(images2/r1.jpg);
   height:250px;
   padding: 20px;
@@ -34,20 +35,17 @@ nav ul {
   justify-content: right;
   gap: 30px;
   padding: 10px;
-
 }
 
 nav a {
-  color: black;
+   color: black;
   text-decoration: none;
   font-weight: bold;
-  
- 
 }
 
 nav a:link
 {
-color:black;
+color:white;
 text-decoration:none;
 padding:10px;
 transition:0.50s;
@@ -58,25 +56,24 @@ nav a:visited
 color:black;
 }
 
-nav a:hover 
-{
+nav a:hover {
   text-decoration: underline;
   background-color: pink;
   border-radius: 15px;
   
 }
 
-.me {
-  //background-image:url(images2/p2.jpg);
+.hero {
+  //background-image:url(images2/r1.jpg);
   height: 400px;
-  color: #b22222;
+  color:#b22222;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.me h2 {
+.hero h2 {
   font-size: 48px;
   margin-bottom: 10px;
 }
@@ -86,7 +83,33 @@ section {
   text-align: center;
 }
 
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
 
+.menu-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-item h3 {
+  padding: 15px 0 5px;
+}
+
+.menu-item p, .menu-item span {
+  padding: 0 15px 15px;
+}
 
 form {
   max-width: 600px;
@@ -122,10 +145,7 @@ footer {
   text-align: center;
   margin-top: 40px;
 }
-
 </style>
-
-
 <body>
   <header>
     <h1>Delish Dinner</h1>
@@ -139,18 +159,40 @@ footer {
     </nav>
   </header>
 
-  <div class="me">
-    <h2>Welcome to Delish Dinner</h2>
-    <p>Home of delicious and fresh meals</p>
-  </div>
-
   <section>
-    <h2>Why Choose Us?</h2>
-    <p>We serve high-quality, freshly prepared meals with ingredients sourced locally.</p>
+    <h2>Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <img src="images2/r2.jpg" alt="Steak">
+        <h3>Grilled Steak</h3>
+        <p>Perfectly grilled steak with herbs.</p>
+        <span>&#8377 499.00</span>
+      </div>
+      <div class="menu-item">
+        <img src="images2/r3.jpg" alt="Pasta">
+        <h3>Italian Pasta</h3>
+        <p>Creamy sauce with fresh basil.</p>
+        <span>&#8377 249.00</span>
+      </div>
+      <div class="menu-item">
+        <img src="images2/r4.jpg" alt="Burger">
+        <h3>Classic Burger</h3>
+        <p>Juicy beef burger with fries.</p>
+        <span>&#8377 269.00</span>
+      </div>
+
+      <div class="menu-item">
+        <img src="#" alt="Pizza">
+        <h3>Italian Pizza</h3>
+        <p>Perfectly grilled steak with herbs.</p>
+        <span>&#8377 499.00</span>
+      </div>
+
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Delish Dinner. All Rights Reserved.</p>
+    <p>&copy; 2025 Delish Diner. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
